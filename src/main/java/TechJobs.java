@@ -62,7 +62,7 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-                    printJobs(JobData.findByValue(searchTerm));
+                    printJobs(JobData.findByValue(searchTerm.toUpperCase()));
                 } else {
                     printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                 }
