@@ -120,10 +120,10 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         for(int jobIndex = 0; jobIndex < someJobs.size(); jobIndex++){
-        System.out.println("*****\n position type: " + someJobs.get(jobIndex).get("position type") + "\n name: " + someJobs.get(jobIndex).get("name") + "\n employer: " + someJobs.get(jobIndex).get("employer") + "\n location: " + someJobs.get(jobIndex).get("location") + "\n core competency: " + someJobs.get(jobIndex).get("core competency") + "\n*****");
+        System.out.println("\n*****\nposition type: " + someJobs.get(jobIndex).get("position type") + "\nname: " + someJobs.get(jobIndex).get("name") + "\nemployer: " + someJobs.get(jobIndex).get("employer") + "\nlocation: " + someJobs.get(jobIndex).get("location") + "\ncore competency: " + someJobs.get(jobIndex).get("core competency") + "\n*****");
         }
             if(someJobs.size()==0){
-                System.out.println("No results found.");
+                System.out.println("No Results");
             }
 
     }
