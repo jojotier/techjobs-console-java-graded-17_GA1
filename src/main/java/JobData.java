@@ -100,7 +100,7 @@ public class JobData {
 
             for(String entry : jobEntry.values()){
                 if(entry.toLowerCase().contains(value.toLowerCase())){
-                    if(!jobs.contains(value)){
+                    if(!jobs.contains(jobEntry)){
                         jobs.add(jobEntry);
                         break;
                     }
